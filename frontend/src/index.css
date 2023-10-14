@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: VTBLight;
+        src: url(./assets/fonts/VTBGroupUI-Light.woff2) format("woff2");
+    }
+    @font-face {
+        font-family: VTBRegular;
+        src: url(./assets/fonts/VTBGroupUI-Regular.woff2) format("woff2");
+    }
+    @font-face {
+        font-family: VTBMedium;
+        src: url(./assets/fonts/VTBGroupUI-Medium.woff2) format("woff2");
+    }
+    @font-face {
+        font-family: VTBDemiBold;
+        src: url(./assets/fonts/VTBGroupUI-DemiBold.woff2) format("woff2");
+    }
+    @font-face {
+        font-family: VTBSemiBold;
+        src: url(./assets/fonts/VTBGroupUI-SemiBold.woff2) format("woff2");
+    }
+    @font-face {
+        font-family: VTBBold;
+        src: url(./assets/fonts/VTBGroupUI-Bold.woff2) format("woff2");
+    }
+}
