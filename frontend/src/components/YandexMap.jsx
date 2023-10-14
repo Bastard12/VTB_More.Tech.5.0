@@ -24,14 +24,17 @@ const YandexMap = () => {
             window.ymaps.ready(() => {
                 const map = new window.ymaps.Map(mapRef.current, {
                     center: [55.75, 37.57],
-                    zoom: 10,
+                    zoom: 11,
+                    controls: []
                 });
             });
         }
     }, [isLoaded]);
 
     return (
-        <div ref={mapRef} style={{ width: "1176px", height: "640px" }} />
+        <div className="flex justify-center items-center bg-blue-100 ">
+            <div ref={mapRef} className="w-[1176px] h-[640px]" />
+        </div>
     );
 };
 
