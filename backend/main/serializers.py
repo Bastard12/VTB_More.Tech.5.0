@@ -12,4 +12,4 @@ class atmsSerializer(serializers.ModelSerializer):
 class OfficesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Offices
-        fields = ('salePointName', 'address', 'status', 'rko', 'officeType', 'salePointFormat', 'suoAvailability', 'hasRamp', 'latitude', 'longitude', 'metroStation', 'distance', 'kep', 'myBranch', 'openHours', 'openHoursIndividual')
+        fields = ('salePointName', 'address', 'status', 'rko', 'officeType', 'salePointFormat', 'suoAvailability', 'hasRamp', 'latitude', 'longitude', 'metroStation', 'distance', 'kep', 'myBranch', 'ul_mon', 'ul_tue', 'ul_wen', 'ul_thu', 'ul_fri', 'ul_sat', 'ul_san', 'fl_mon', 'fl_tue', 'fl_wen', 'fl_thu', 'fl_fri', 'fl_sat', 'fl_san')
