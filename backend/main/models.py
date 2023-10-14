@@ -1,3 +1,5 @@
+# -*- coding: windows-1251 -*
+
 from django.db import models
 
 # Create your models here.
@@ -47,17 +49,14 @@ class Offices(models.Model):
     kep = models.BooleanField()
     myBranch = models.BooleanField()
 
+    # Для юр лиц
+    daysUL = models.CharField(max_length=10)
+    hoursUL = models.CharField(max_length=20)
+
+    # Для физ лиц
+    daysFL = models.CharField(max_length=10)
+    hoursFL = models.CharField(max_length=20)
+
     def __str__(self):
         return self.salePointName
 
-
-class OpenHours(models.Model):
-    office = models.ForeignKey(Offices, on_delete=models.CASCADE)
-    days = models.CharField(max_length=10)
-    hours = models.CharField(max_length=20)
-
-
-class OpenHoursIndividual(models.Model):
-    office = models.ForeignKey(Offices, on_delete=models.CASCADE)
-    days = models.CharField(max_length=10)
-    hours = models.CharField(max_length=20)
