@@ -27,6 +27,8 @@ const YandexMap = () => {
                     zoom: 11,
                     controls: []
                 });
+                const placemark = new window.ymaps.Placemark([55.75, 37.57], {}, {});
+                map.geoObjects.add(placemark);
             });
         }
     }, [isLoaded]);
