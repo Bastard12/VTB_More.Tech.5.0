@@ -14,8 +14,7 @@ def load_data_from_json(apps, schema_editor):
         data = json.load(json_file)
     # Итерируемся по данным и создаем объекты модели atms
     for item in data['atms']:
-        print(item)
-        ATMS(
+        atms1 = ATMS(
             address=item['address'],
             latitude=item['latitude'],
             longitude=item['longitude'],
@@ -37,6 +36,7 @@ def load_data_from_json(apps, schema_editor):
             supportsRub_serviceCapability=item['services']['supportsRub']['serviceCapability'],
             supportsRub_serviceActivity=item['services']['supportsRub']['serviceActivity']
         )
+        atms1.save()
 
 
 class Migration(migrations.Migration):
