@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import axios
+import {API_URL_ATMS} from "../index";
+import {API_URL_OFFICES} from "../index";
 
 const YandexMap = () => {
     const [isLoaded, setIsLoaded] = useState(false);
