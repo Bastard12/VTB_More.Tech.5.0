@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {MainPage} from "./pages/MainPage";
 
+export const API_URL_ATMS = "http://127.0.0.1:8000/api/atms/"
+export const API_URL_OFFICES = "http://127.0.0.1:8000/api/offices/"
+export const API_STATIC_MEDIA = "http://127.0.0.1:8000/"
 
 const router = createBrowserRouter([
     {
